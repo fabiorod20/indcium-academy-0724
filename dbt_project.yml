@@ -40,6 +40,13 @@ models:
     +materialized: view
     marts:
       +materialized: table
+      comercial:
+        +schema: marts
+      intermediate:
+        +materialized: view
+        +schema: int
     staging:
+      +schema: stg
       +materialized: view
       erp:
+        
